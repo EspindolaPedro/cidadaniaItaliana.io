@@ -1,0 +1,67 @@
+:root {
+    --header-g:#000;
+    --header-g1:#161616;
+    --header-g2:#171717;
+
+    --bg:#ffff;
+    --bg-1:#141414;
+    --bg-3:#161616;
+
+    --box-detail:#090909;
+
+    --point-detail:#AE0D0D;
+    --text-large:#f7f7f7;
+    --text-body:#D6D6D6;
+
+    --a-2:#680D10;
+    --a-3:#A71C20;
+
+    --A-1:#AE0D0D;
+    --c-9:#BCBCBC;
+}
+
+.h-1 {
+    color: var(--header-g);
+}
+.h-2 {
+    color: var(--header-g1);
+}
+.h-3 {
+    color: var(--header-g2);
+}
+.bg-1 {
+    background: var(--bg);
+}
+.bg-2 {
+    color: var(--bg-1);
+}
+.bg-3 {
+    color: var(--bg-2);
+}
+.bg-4 {
+    background: var( --bg-3);
+}
+.box-color {
+    color: var(--box-detail);
+}
+.point-detail {
+    color: var(--point-detail);
+}
+.text1 {
+    color: var(--text-large);
+}
+.text2 {
+    color: var(--text-body);
+}
+.a1 {
+    color: var(--A-1);
+}
+.a2 {
+    color: var(--A-2);
+}
+.a3 {
+    color: var(--A-3);
+}
+.c9 {
+    color: var(--c-9);
+}

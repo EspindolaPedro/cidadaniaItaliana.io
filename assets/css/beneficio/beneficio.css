@@ -1,0 +1,45 @@
+.beneficio {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.beneficio-content span {
+    font-weight: 700;
+}
+.beneficio-list {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: space-around;
+    gap: 40px;   
+    padding-bottom: 40px;
+    
+}
+.beneficio-list li {
+    flex: 1;
+    text-align: center;
+    place-self: center;
+} 
+.beneficio-content {
+    display: grid;
+}
+.beneficio-content
+ .botao {
+   margin:0 auto;
+}
+.beneficio-list li p {
+    font-size: 1.3rem;
+}
+@media (max-width: 800px) {
+    .beneficio-content h1 {
+        font-size: 1.9rem;
+        line-height: 1.3;
+    }
+ 
+    .beneficio-list li {
+        min-width: 240px;
+    }
+    .beneficio-list { 
+        overflow-x: scroll;
+    }
+}

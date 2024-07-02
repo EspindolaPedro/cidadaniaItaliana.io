@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+a, li, ul {
+    list-style: none;
+    text-decoration: none;
+    
+}
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+img {
+    max-width: 100%;
+}
+.botao{
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding:15px 30px;
+    border:2px solid var(--a-2);
+    border-radius: 4px;
+    background: linear-gradient(to right, var(--a-2), var(--a-3));
+    color:var(--bg);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.botao:hover {
+    animation: animaButton 0.5s ease-in 2 alternate;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x:0%;
+    }
+    100% {
+        background-position-x:100%;
+    }
+}
+
+@keyframes animaButton {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

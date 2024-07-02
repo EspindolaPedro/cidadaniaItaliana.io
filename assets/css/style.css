@@ -1,0 +1,10 @@
+@import url(global.css);
+@import url(type.css);
+@import url(color.css);
+
+@import url(header/header.css);
+@import url(home/home.css);
+@import url(about/about.css);
+@import url(beneficio/beneficio.css);
+@import url(reconhecimento/reconhecimento.css);
+@import url(depoimentos/depoimento.css);
