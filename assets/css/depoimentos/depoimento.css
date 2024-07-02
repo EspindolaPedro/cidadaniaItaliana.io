@@ -16,7 +16,7 @@
     width:850px;
     height:250px;
     overflow: hidden;
-    
+    touch-action: pan-y;
 }
 .slides {
     display: flex;
