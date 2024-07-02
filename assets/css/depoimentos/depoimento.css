@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 70vh;
+    overflow-y:hidden;
 }
 .depoimentos-content h1 {
     align-items: center;
@@ -43,6 +44,7 @@
     margin-top: 270px;
     display: flex;
     justify-content: center;
+  
 }
 
 .manual-btn {
@@ -161,5 +163,8 @@
 
     .manual-btn, .navigation-auto div {
         border-radius: 5px;
+    }
+    .depoimentos-content {
+        width: 100%;
     }
 }
