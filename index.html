@@ -361,7 +361,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/script.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            disable: 'mobile', // Desativa animações em dispositivos móveis
+    duration: 600, // Duração da animação
+    easing: 'ease-in-out', // Tipo de easing
+        });
     </script>
 </body>
 
