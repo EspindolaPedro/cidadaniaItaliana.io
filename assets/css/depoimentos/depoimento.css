@@ -5,6 +5,7 @@
     align-items: center;
     height: 70vh;
     overflow-x:hidden;
+    padding-bottom: 40px;
 }
 .depoimentos-content h1 {
     align-items: center;
@@ -22,7 +23,9 @@
     display: flex;
     width: 1000%;
     height: 400px;
+   
 }
+
 .slides input {
     display:none ;
 }
@@ -44,7 +47,6 @@
     margin-top: 270px;
     display: flex;
     justify-content: center;
-  
 }
 
 .manual-btn {
@@ -124,7 +126,7 @@
 
 @media (max-width:1000px) {
     .depoimentos-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .slider, .navigation-auto, .manual-navigation {
         width: 100%;

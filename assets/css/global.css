@@ -4,6 +4,9 @@
     box-sizing: border-box;
     
 }
+html {
+    scroll-behavior: smooth;
+  }
 a, li, ul {
     list-style: none;
     text-decoration: none;
@@ -31,10 +34,18 @@ img {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-.botao:hover {
-    animation: animaButton 0.5s ease-in 2 alternate;
+
+.icons a:hover {
+    animation: translateY 0.8s alternate infinite;
 }
 
+a.botao:hover {
+    animation: animaButton 0.5s ease-in 2 alternate;
+}
+img {
+    height: auto;
+    max-width:100% ;
+}
 @keyframes degrade {
     0% {
         background-position-x:0%;
@@ -52,3 +63,12 @@ img {
         transform: scale(1.1);
     }
 }
+
+@keyframes translateY {
+    from {
+      transform: translateY(0) scale(1);
+    }
+    to {
+      transform: translateY(-8px) scale(1.1);
+    }
+  }

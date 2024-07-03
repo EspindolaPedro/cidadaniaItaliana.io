@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bertozzi & Bruschi</title>
+    <meta name="description" content="Transforme seu sonho de cidadania Italiana em realidade">
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,16 +14,21 @@
         rel="stylesheet">
     <link rel="preload" href="src\css\style.css" as="style">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
 </head>
 
 <body>
     <header id="header">
         <div class="header container">
             <div class="icons">
-                <a href="#"><img src="assets/icons/instagram.svg" alt="instagram icone"></a>
-                <a href="#"><img src="assets/icons/facebook.svg" alt="facebook icone"></a>
+                <a href="#"><img width="32" height="32" src="assets/icons/instagram.svg" alt="instagram icone"></a>
+                <a href="#"><img width="32" height="32" src="assets/icons/facebook.svg" alt="facebook icone"></a>
             </div>
-            <a class="logo" href="#home"><img src="assets/images/logo1.png" alt="logo"></a>
+            <a class="logo" href="#home"><img width="201" height="88" src="assets/images/logo1.png" alt="logo"></a>
             <nav id="nav" aria-label="primaria">
                 <button id="btn-mobile" area-expanded="false">
                     <span id="hamburguer"></span>
@@ -29,15 +36,16 @@
                 <ul class="menu">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#beneficio">Benefícios</a></li>
-                    <li><a href="#pergunta">Perguntas</a></li>
+                    <li><a href="#perguntas">Perguntas</a></li>
                     <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section id="home" aria-label="seção primaria">
-        <div class="home container">
-            <div class="home-content">
+        <div class="home container" >
+            <div class="home-content" data-aos="fade-up" data-aos-duration="1500">
                 <h1 class="font-h1 text1">Transforme seu sonho de cidadania Italiana em realidade<span
                         class="point-detail">.</span></h1>
 
@@ -58,7 +66,7 @@
     </section>
     <section id="sobre" class="bg-4 sobre" aria-label="Sobre BERTOZZI & BRUSCHI">
         <div class="about container">
-            <div class="about-content">
+            <div class="about-content" >
                 <h1 class="font-h3 text1">Quem te ajudará em todo este processo
                     para a aquisição da sua cidadania?
                 </h1>
@@ -76,7 +84,7 @@
             </div>
             <picture>
                 <source srcset="assets/images/olhandoPNadamobile.png" media="(max-width:800px)">
-                <img src="assets/images/olhandoPNada3.png" alt="Bertozzi e Bruschi">
+                <img width="3204" height="4800" src="assets/images/olhandoPNada3.png" alt="Bertozzi e Bruschi" >
             </picture>
         </div>
     </section>
@@ -86,33 +94,33 @@
             <h1 class="font-h5 ">Quais os <span>benefícios</span> de reconhecer a cidadania italiana?</h1>
 
             <ul class="beneficio-list">
-                <li>
-                    <img src="./assets/Decoration/paper.svg" alt="">
+                <li data-aos="fade-up" data-aos-duration="1000">
+                    <img width="106" height="114" src="./assets/Decoration/paper.svg" alt="" >
                     <p><span>Prestar concursos</span> <br>
                         públicos na itália</p>
                 </li>
-                <li>
-                    <img src="./assets/Decoration/europa.svg" alt="">
+                <li data-aos="fade-up" data-aos-duration="1000">
+                    <img width="96" height="97" src="./assets/Decoration/europa.svg" alt="">
                     <p><span>Ter livre acesso </span> <br>
                         à Europa</p>
                 </li>
-                <li>
-                    <img src="./assets/Decoration/voto.svg" alt="">
+                <li data-aos="fade-up" data-aos-duration="1000">
+                    <img width="129" height="112" src="./assets/Decoration/voto.svg" alt="">
                     <p><span>Direito a voto na Itália </span> <br>
                         (por correio), facultativo.</p>
                 </li>
-                <li>
-                    <img src="./assets/Decoration/cidadania.svg" alt="">
+                <li data-aos="fade-up" data-aos-duration="3000">
+                    <img width="104" height="115" src="./assets/Decoration/cidadania.svg" alt="">
                     <p><span>Transmissão direta da Cidadania</span> <br>
                         Italiana aos filhos menores</p>
                 </li>
-                <li>
-                    <img src="./assets/Decoration/formacao.svg" alt="">
+                <li data-aos="fade-up" data-aos-duration="3000">
+                    <img width="119" height="116" src="./assets/Decoration/formacao.svg" alt="">
                     <p><span>Acesso às instituições</span> <br>
                         públicas de ensino</p>
                 </li>
-                <li>
-                    <img src="./assets/Decoration/direitos.svg" alt="">
+                <li data-aos="fade-up" data-aos-duration="3000">
+                    <img width="108" height="111" src="./assets/Decoration/direitos.svg" alt="">
                     <p><span>Obtenção de todos os</span> <br>
                         direitos de um europeu</p>
                 </li>
@@ -126,27 +134,27 @@
             <h2 class="font-h5 text1">Por que fazer o seu reconhecimento conosco?</h2>
 
             <ul class="font-h7 text1">
-                <li>
+                <li data-aos="fade-right" data-aos-duration="1500">
                     <span class="number">1</span>
                     Já ajudamos mais de <span>400 famílias</span> no reconhecimento da cidadania italiana.
                 </li>
-                <li>
+                <li data-aos="fade-left" data-aos-duration="3000">
                     <span class="number">2</span>
                     Nos preocupamos com cada processo de forma única!
                 </li>
-                <li>
+                <li data-aos="fade-right" data-aos-duration="1500">
                     <span class="number">3</span>
                     Construímos o seu processo do início até o reconhecimento da cidadania.
                 </li>
-                <li>
+                <li data-aos="fade-left" data-aos-duration="3000">
                     <span class="number">4</span>
                     Atendemos o Brasil e muitos outros países.
                 </li>
-                <li>
+                <li data-aos="fade-right" data-aos-duration="1500">
                     <span class="number">5</span>
                     Advogados <span>experientes</span> na área desde 2011 focados em reconhecimento da cidadania.
                 </li>
-                <li>
+                <li data-aos="fade-left" data-aos-duration="3000">
                     <span class="number">6</span>
                     A história da sua família é muito importante para nós nesse processo.
                 </li>
@@ -154,14 +162,14 @@
         </div>
     </section>
 
-    <section id="depoimentos">
+    <section id="depoimentos" aria-label="Depoimento">
         <div class="depoimentos-content container">
-            <h1 class="font-h5 text1">Depoimentos<span class="point-detail">.</span></h1>
+            <h1 class="font-h5 text1" data-aos="fade-right" data-aos-duration="1500">Depoimentos<span class="point-detail">.</span></h1>
 
             <div class="slider">
 
                 <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio0">
+                    <input type="radio" name="radio-btn" id="radio0" checked>
                     <input type="radio" name="radio-btn" id="radio1">
                     <input type="radio" name="radio-btn" id="radio2">
                     <input type="radio" name="radio-btn" id="radio3">
@@ -174,34 +182,34 @@
 
 
                     <div class="slide first">
-                        <img src="assets/images/depoimentos/dep1.png" alt="Depoimento 1">
+                        <img width="841" height="214" src="assets/images/depoimentos/dep1.png" alt="Depoimento 1">
                     </div>
                     <div class="slide">
-                        <img src="assets/images/depoimentos/dep2.png" alt="Depoimento 2">
+                        <img width="903" height="216" src="assets/images/depoimentos/dep2.png" alt="Depoimento 2">
                     </div>
                     <div class="slide ">
-                        <img src="assets/images/depoimentos/dep3.png" alt="Depoimento 3">
+                        <img width="895" height="237" src="assets/images/depoimentos/dep3.png" alt="Depoimento 3">
                     </div>
                     <div class="slide ">
-                        <img src="assets/images/depoimentos/dep4.png" alt="Depoimento 4">
+                        <img width="894" height="238" src="assets/images/depoimentos/dep4.png" alt="Depoimento 4">
                     </div>
                     <div class="slide ">
-                        <img src="assets/images/depoimentos/dep5.png" alt="Depoimento 5">
+                        <img width="893" height="211" src="assets/images/depoimentos/dep5.png" alt="Depoimento 5">
                     </div>
                     <div class="slide ">
-                        <img src="assets/images/depoimentos/dep6.png" alt="Depoimento 6">
+                        <img width="895" height="196" src="assets/images/depoimentos/dep6.png" alt="Depoimento 6">
                     </div>
                     <div class="slide ">
-                        <img src="assets/images/depoimentos/dep7.png" alt="Depoimento 7">
+                        <img width="893" height="209" src="assets/images/depoimentos/dep7.png" alt="Depoimento 7">
                     </div>
                     <div class="slide ">
-                        <img src="assets/images/depoimentos/dep8.png" alt="Depoimento 8">
+                        <img width="876" height="275" src="assets/images/depoimentos/dep8.png" alt="Depoimento 8">
                     </div>
                     <div class="slide ">
-                        <img src="assets/images/depoimentos/dep9.png" alt="Depoimento 9">
+                        <img width="864" height="243" src="assets/images/depoimentos/dep9.png" alt="Depoimento 9">
                     </div>
                     <div class="slide ">
-                        <img src="assets/images/depoimentos/dep10.png" alt="Depoimento 10">
+                        <img width="858" height="273" src="assets/images/depoimentos/dep10.png" alt="Depoimento 10">
                     </div>
 
 
@@ -236,10 +244,125 @@
         </div>
     </section>
 
+    <article id="perguntas" class="perguntas container">
+        <h2 class="font-h5" data-aos="fade-right" data-aos-duration="1500">Pergunta Frequentes<span class="point-detail">.</span></h1>
 
+            <dl>
+                <div class="q">
+                    <dt><button class="font-h8 dt" aria-controls="pergunta1" aria-expanded="true">Quem tem direito à
+                            cidadania italiana?</button></dt>
+                    <dd id="pergunta1" class="font-h10 answer active">
+                        Se você tiver registros de nascimento, casamento e óbito de um ascendente direto nascido na
+                        Itália, você pode solicitar o reconhecimento da Cidadania Italiana.
+                    </dd>
+                </div>
+                <div class="q">
+                    <dt><button class="font-h8 dt" aria-controls="pergunta2" aria-expanded="false">Quais as formas de
+                            obtenção da cidadania italiana?</button></dt>
+                    <dd id="pergunta2" class="font-h10 answer ">
+                        Existem três formas principais de obter o reconhecimento da cidadania italiana: <br>
+                        <span>1º</span> Consulados Italianos: Menor custo, prazo mais longo, não é necessário ir até a
+                        Itália. <br>
+                        <span>2º</span> Via Administrativa na Itália: Maior custo, prazo mais curto, requer residência
+                        contínua na Itália. <br>
+                        <span>3º</span> Via Judicial na Itália: Custo médio, prazo médio, permite incluir familiares.
+                    </dd>
+                </div>
+                <div class="q">
+                    <dt><button class="font-h8 dt" aria-controls="pergunta3" aria-expanded="false">Qual a documentação
+                            necessária para cidadania italiana?</button></dt>
+                    <dd id="pergunta3" class="font-h10 answer ">
+                        Certidões de nascimento, casamento e óbito desde você até seu ascendente italiano.
+                    </dd>
+                </div>
+                <div class="q">
+                    <dt><button class="font-h8 dt" aria-controls="pergunta4" aria-expanded="false">Por onde começar o
+                            reconhecimento da cidadania italiana?</button></dt>
+                    <dd id="pergunta4" class="font-h10 answer ">
+                        Para iniciar o processo de reconhecimento da cidadania italiana, siga estes passos: <br>
+                        <span>Monte sua árvore genealógica:</span> Se você não sabe onde estão os registros dos seus
+                        ancestrais italianos, converse com seus parentes e anote as datas e locais de nascimento,
+                        casamento e óbito.
+                        <br><br>
+                        <span>Obtenha certidões de registro civil:</span> Com a árvore genealógica, solicite no cartório
+                        uma segunda via da certidão de nascimento do ancestral mais distante possível. Por exemplo, a
+                        certidão do seu avô pode revelar nomes e naturalidades dos bisavós e trisavós, ajudando a
+                        identificar seu ascendente italiano.
+                    </dd>
+                </div>
+            </dl>
 
+    </article>
+    <section id="contato">
+            <div class="form-content container">
+                <h3 class="font-h5" data-aos="fade-right" data-aos-duration="1500">Contato<span class="point-detail">.</span></h3>
+                <form action="#" method="POST">
+                    <div>
+                        <label for="nome">Nome</label> <br>
+                        <input type="text" name="nome" placeholder="Nome" required>
+                    </div>
+                    <div>
+                        <label for="nome">Email</label> <br>
+                        <input type="email" name="email" placeholder="contato@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="nome">Telefone</label> <br>
+                        <input type="text" name="telefone" placeholder="(99) 9 9999-9999" required>
+                    </div> <br>
+                    <div class="botao-container">
+                        <button class="botao">ENTRE EM CONTATO</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <img width="770" height="720" src="assets/images/background.png" alt="ilustração da torre coliseu">
+            </div>
+    </section>
+    <footer class="footer-bg">
+        <div class="footer container">
+            <a class="logo" href="#home"><img width="201" height="88" src="assets/images/logo1.png" alt="logo"></a>
 
+            <div class="footer-contato">
+                <h3 class="">Contato</h3>
+                <ul class="">
+                    <li><a class="" href="tel:+5567991522775">+55 67 99152 2775</a></li>
+                    <li>R. Alagoas, 396 - Centro,</li>
+                    <li>Campo Grande - MS, 79020-120</li>
+                </ul>
+                <div class="footer-redes">
+                    <a href="/">
+                        <img width="32" height="32" src="assets/icons/facebook.svg" alt="Instagram">
+                    </a>
+                    <a href="/">
+                        <img width="32" height="32" src="assets/icons/instagram.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.youtube.com/@cidadaniaitalianabb">
+                        <img width="33" height="26" src="assets/icons/youtube.svg" alt="Youtube">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-informacoes">
+                <h3 class="font-2-lb w-0">informações</h3>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#beneficio">Benefícios</a></li>
+                        <li><a href="#perguntas">Perguntas</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="footer-copy">Bertozzi & Bruschi © 2024 todos os direitos reservados. <br><a href="https://retenmax.com.br/" target="_blank">Desenvolvido por RetenMax.</a></p>
+        
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

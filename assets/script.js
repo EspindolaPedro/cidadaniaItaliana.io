@@ -10,12 +10,21 @@ function toggleMenu(e) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchsttart', toggleMenu);
 
+const navLinks = document.querySelectorAll("#nav a");
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const nav = document.getElementById("nav");
+    nav.classList.remove("active");
+    btnMobile.setAttribute('aria-expanded', 'false');
+  });
+});
+
 let count = 1;
 document.getElementById("radio1").checked = true;
 
 setInterval(function() {
     nextImage()
-}, 15000)
+}, 20000)
 
 function nextImage() {
     count++;
@@ -27,24 +36,24 @@ function nextImage() {
 
 const slider = document.querySelector('.slides');
 const slides = document.querySelectorAll('.slide');
-let startX, endX, diffX;
+let startX, currentX, diffX;
 let currentIndex = 0;
+
+
 
 const handleTouchStart = (e) => {
   startX = e.touches[0].clientX;
 };
 
 const handleTouchMove = (e) => {
-  endX = e.touches[0].clientX;
+  currentX = e.touches[0].clientX;
 };
 
 const handleTouchEnd = () => {
-  diffX = startX - endX;
-  if (diffX > 50) {
-    // Deslizar para a esquerda
+  diffX = startX - currentX;
+  if (diffX > 40) {
     currentIndex = Math.min(currentIndex + 1, slides.length - 1);
-  } else if (diffX < -50) {
-    // Deslizar para a direita
+  } else if (diffX < -40) {
     currentIndex = Math.max(currentIndex - 1, 0);
   }
   updateSlider();
@@ -57,7 +66,26 @@ const updateSlider = () => {
   }
 };
 
-// Adiciona os eventos de toque ao contêiner do slider
+// Eventos de toque
 slider.addEventListener('touchstart', handleTouchStart);
 slider.addEventListener('touchmove', handleTouchMove);
 slider.addEventListener('touchend', handleTouchEnd);
+
+
+//Perguntass Frequentes
+const perguntas = document.querySelectorAll('.perguntas button');
+
+function eventosPerguntas(pergunta) {
+  pergunta.addEventListener('click', ativarPergunta);
+}
+function ativarPergunta(e) {
+  const pergunta = e.currentTarget;
+  const controls = pergunta.getAttribute('aria-controls');
+  const resposta = document.getElementById(controls);
+  resposta.classList.toggle('active');
+  const active = resposta.classList.contains('active');
+
+  pergunta.setAttribute('aria-expanded', active);
+  
+}
+perguntas.forEach(eventosPerguntas);

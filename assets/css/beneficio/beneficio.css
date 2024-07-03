@@ -42,4 +42,15 @@
     .beneficio-list { 
         overflow-x: scroll;
     }
+    .beneficio-list::-webkit-scrollbar {
+        width: 2px;
+        height: 10px;
+    }
+    .beneficio-list::-webkit-scrollbar-thumb {
+        background: var(--point-detail);
+        border-radius: 3px;
+    }
+    .beneficio-list::-webkit-scrollbar-track {
+        background: #faf6ed;
+    }
 }
