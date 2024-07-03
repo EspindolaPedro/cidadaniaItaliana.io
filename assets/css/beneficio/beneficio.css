@@ -40,6 +40,7 @@
         min-width: 240px;
     }
     .beneficio-list { 
+        overflow-y: hidden;
         overflow-x: scroll;
     }
     .beneficio-list::-webkit-scrollbar {

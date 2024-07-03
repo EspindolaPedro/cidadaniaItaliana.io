@@ -94,32 +94,32 @@
             <h1 class="font-h5 ">Quais os <span>benefícios</span> de reconhecer a cidadania italiana?</h1>
 
             <ul class="beneficio-list">
-                <li data-aos="fade-up" data-aos-duration="1000">
+                <li data-aos="fade-up" data-aos-duration="1000" class="disable-aos">
                     <img width="106" height="114" src="./assets/Decoration/paper.svg" alt="" >
                     <p><span>Prestar concursos</span> <br>
                         públicos na itália</p>
                 </li>
-                <li data-aos="fade-up" data-aos-duration="1000">
+                <li data-aos="fade-up" data-aos-duration="1000" class="disable-aos">
                     <img width="96" height="97" src="./assets/Decoration/europa.svg" alt="">
                     <p><span>Ter livre acesso </span> <br>
                         à Europa</p>
                 </li>
-                <li data-aos="fade-up" data-aos-duration="1000">
+                <li data-aos="fade-up" data-aos-duration="1000" class="disable-aos">
                     <img width="129" height="112" src="./assets/Decoration/voto.svg" alt="">
                     <p><span>Direito a voto na Itália </span> <br>
                         (por correio), facultativo.</p>
                 </li>
-                <li data-aos="fade-up" data-aos-duration="3000">
+                <li data-aos="fade-up" data-aos-duration="2000" class="disable-aos">
                     <img width="104" height="115" src="./assets/Decoration/cidadania.svg" alt="">
                     <p><span>Transmissão direta da Cidadania</span> <br>
                         Italiana aos filhos menores</p>
                 </li>
-                <li data-aos="fade-up" data-aos-duration="3000">
+                <li data-aos="fade-up" data-aos-duration="2000" class="disable-aos">
                     <img width="119" height="116" src="./assets/Decoration/formacao.svg" alt="">
                     <p><span>Acesso às instituições</span> <br>
                         públicas de ensino</p>
                 </li>
-                <li data-aos="fade-up" data-aos-duration="3000">
+                <li data-aos="fade-up" data-aos-duration="2000" class="disable-aos">
                     <img width="108" height="111" src="./assets/Decoration/direitos.svg" alt="">
                     <p><span>Obtenção de todos os</span> <br>
                         direitos de um europeu</p>
@@ -134,27 +134,27 @@
             <h2 class="font-h5 text1">Por que fazer o seu reconhecimento conosco?</h2>
 
             <ul class="font-h7 text1">
-                <li data-aos="fade-right" data-aos-duration="1500">
+                <li data-aos="fade-right" data-aos-duration="4000">
                     <span class="number">1</span>
                     Já ajudamos mais de <span>400 famílias</span> no reconhecimento da cidadania italiana.
                 </li>
-                <li data-aos="fade-left" data-aos-duration="3000">
+                <li data-aos="fade-left" data-aos-duration="4000">
                     <span class="number">2</span>
                     Nos preocupamos com cada processo de forma única!
                 </li>
-                <li data-aos="fade-right" data-aos-duration="1500">
+                <li data-aos="fade-right" data-aos-duration="4000">
                     <span class="number">3</span>
                     Construímos o seu processo do início até o reconhecimento da cidadania.
                 </li>
-                <li data-aos="fade-left" data-aos-duration="3000">
+                <li data-aos="fade-left" data-aos-duration="3500">
                     <span class="number">4</span>
                     Atendemos o Brasil e muitos outros países.
                 </li>
-                <li data-aos="fade-right" data-aos-duration="1500">
+                <li data-aos="fade-right" data-aos-duration="3500">
                     <span class="number">5</span>
                     Advogados <span>experientes</span> na área desde 2011 focados em reconhecimento da cidadania.
                 </li>
-                <li data-aos="fade-left" data-aos-duration="3000">
+                <li data-aos="fade-left" data-aos-duration="3500">
                     <span class="number">6</span>
                     A história da sua família é muito importante para nós nesse processo.
                 </li>
@@ -164,7 +164,7 @@
 
     <section id="depoimentos" aria-label="Depoimento">
         <div class="depoimentos-content container">
-            <h1 class="font-h5 text1" data-aos="fade-right" data-aos-duration="1500">Depoimentos<span class="point-detail">.</span></h1>
+            <h1 class="font-h5 text1" data-aos="fade-right" data-aos-duration="3000">Depoimentos<span class="point-detail">.</span></h1>
 
             <div class="slider">
 
@@ -245,7 +245,7 @@
     </section>
 
     <article id="perguntas" class="perguntas container">
-        <h2 class="font-h5" data-aos="fade-right" data-aos-duration="1500">Pergunta Frequentes<span class="point-detail">.</span></h1>
+        <h2 class="font-h5" data-aos="fade-right" data-aos-duration="4000">Pergunta Frequentes<span class="point-detail">.</span></h1>
 
             <dl>
                 <div class="q">
@@ -295,7 +295,7 @@
     </article>
     <section id="contato">
             <div class="form-content container">
-                <h3 class="font-h5" data-aos="fade-right" data-aos-duration="1500">Contato<span class="point-detail">.</span></h3>
+                <h3 class="font-h5" data-aos="fade-right" data-aos-duration="4000">Contato<span class="point-detail">.</span></h3>
                 <form action="#" method="POST">
                     <div>
                         <label for="nome">Nome</label> <br>
@@ -361,10 +361,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/script.js"></script>
     <script>
-        AOS.init({
-            disable: 'mobile', // Desativa animações em dispositivos móveis
-    duration: 600, // Duração da animação
-    easing: 'ease-in-out', // Tipo de easing
+          document.addEventListener("DOMContentLoaded", function() {
+            // Inicialize AOS
+            AOS.init({
+                duration: 600, // Duração da animação
+                easing: 'ease-in-out', // Tipo de easing
+            });
         });
     </script>
 </body>
