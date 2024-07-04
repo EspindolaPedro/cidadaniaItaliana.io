@@ -1,10 +1,8 @@
-const btnMobile = document.getElementById("btn-mobile");
-
-function toggleMenu(e) {
-    if (e.type === 'touchstart') e.preventDefault();
-    const nav = document.getElementById("nav");
-    nav.classList.toggle("active");
-    e.currentTarget.setAttribute('aria-expanded', 'true')
+const btnMobile = document.getElementById("btn-mobile"); function toggleMenu(e) {
+  if (e.type === 'touchstart') e.preventDefault();
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active");
+  e.currentTarget.setAttribute('aria-expanded', 'true')
 }
 
 btnMobile.addEventListener('click', toggleMenu);
@@ -22,16 +20,16 @@ navLinks.forEach(link => {
 let count = 1;
 document.getElementById("radio1").checked = true;
 
-setInterval(function() {
-    nextImage()
+setInterval(function () {
+  nextImage()
 }, 20000)
 
 function nextImage() {
-    count++;
-    if (count > 4) {
-        count = 1;
-    }
-    document.getElementById("radio"+count).checked = true;
+  count++;
+  if (count > 4) {
+    count = 1;
+  }
+  document.getElementById("radio" + count).checked = true;
 }
 
 const slider = document.querySelector('.slides');
@@ -86,6 +84,6 @@ function ativarPergunta(e) {
   const active = resposta.classList.contains('active');
 
   pergunta.setAttribute('aria-expanded', active);
-  
+
 }
 perguntas.forEach(eventosPerguntas);

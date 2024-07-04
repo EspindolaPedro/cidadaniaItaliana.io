@@ -80,8 +80,12 @@
 
 @media (max-width:800px){
     .perguntas{
+        overflow-x: hidden;
         padding-top:60px;
         padding-bottom:60px;
+    }
+    .q dt button {
+        color:var(--bg-3);
     }
     .perguntas h2{
         margin-bottom: 20px;

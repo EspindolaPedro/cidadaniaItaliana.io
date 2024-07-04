@@ -5,8 +5,10 @@
     
 }
 
-html {
+html, body {
+    overflow-x: hidden;
     scroll-behavior: smooth;
+
 }
 a, li, ul {
     list-style: none;
@@ -73,3 +75,4 @@ img {
       transform: translateY(-8px) scale(1.1);
     }
   }
+

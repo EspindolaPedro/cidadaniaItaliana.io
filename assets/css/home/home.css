@@ -1,6 +1,7 @@
 #home {
     position: relative; /* Garante que o pseudo-elemento ::before seja posicionado corretamente */
     min-height: 80vh; /* Altura total da seção, ajuste conforme necessário */
+    
 }
 #home::before {
     content: '';
@@ -81,6 +82,7 @@
         grid-template-columns: 1fr;
         max-width: 110ch;
         min-height: 80vh;
+        overflow-x: hidden;
     }
     .home h1 {
         font: 700 38px/ 46px "Poppins", sans-serif;
