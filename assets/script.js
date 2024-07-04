@@ -99,5 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
       
       beneficioList.style.scrollbarWidth = 'thin';
       beneficioList.style.scrollbarColor = 'var(--point-detail) #faf6ed';
+      
   }
 });
