@@ -13,7 +13,7 @@
     align-content: space-around;
     gap: 40px;   
     padding-bottom: 40px;
-    overflow-x:auto;
+    overflow-x:hidden;
     overflow-y:hidden;
     min-width: 280px;
     margin-left: auto;
@@ -48,6 +48,8 @@
         -webkit-overflow-scrolling: touch; 
         scrollbar-width: thin;
         scrollbar-color: var(--point-detail) #faf6ed; 
+        scroll-behavior: smooth;
+    
     }
     .beneficio-list::-webkit-scrollbar {
         width: 2px;

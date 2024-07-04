@@ -92,13 +92,25 @@ perguntas.forEach(eventosPerguntas);
 document.addEventListener('DOMContentLoaded', function() {
   const beneficioList = document.querySelector('.beneficio-list');
   
-  if (beneficioList) {
-      beneficioList.style.overflowY = 'hidden';
-      beneficioList.style.overflowX = 'scroll';
-      beneficioList.style.webkitOverflowScrolling = 'touch';
-      
-      beneficioList.style.scrollbarWidth = 'thin';
-      beneficioList.style.scrollbarColor = 'var(--point-detail) #faf6ed';
-      
+  function applyScrollbarStyles() {
+    const beneficioList = document.querySelector('.beneficio-list');
+    if (window.innerWidth <= 850) {
+        beneficioList.style.overflowY = 'hidden';
+        beneficioList.style.overflowX = 'scroll';
+        beneficioList.style.webkitOverflowScrolling = 'touch';
+        beneficioList.style.scrollbarWidth = 'thin';
+        beneficioList.style.scrollbarColor = 'var(--point-detail) #faf6ed';
+    }
   }
 });
+
+function sendMessage() {
+  let message = document.getElementById('message').value;
+  let encodedMessage = encodeURIComponent(message);
+  let phoneNumber = '5567991522775';
+  let url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  window.open(url, '_blank');
+}
+
+window.addEventListener('resize', applyScrollbarStyles);
+window.addEventListener('DOMContentLoaded', applyScrollbarStyles);
