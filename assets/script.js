@@ -87,3 +87,17 @@ function ativarPergunta(e) {
 
 }
 perguntas.forEach(eventosPerguntas);
+
+//scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const beneficioList = document.querySelector('.beneficio-list');
+  
+  if (beneficioList) {
+      beneficioList.style.overflowY = 'hidden';
+      beneficioList.style.overflowX = 'scroll';
+      beneficioList.style.webkitOverflowScrolling = 'touch';
+      
+      beneficioList.style.scrollbarWidth = 'thin';
+      beneficioList.style.scrollbarColor = 'var(--point-detail) #faf6ed';
+  }
+});

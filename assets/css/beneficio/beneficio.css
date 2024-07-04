@@ -46,6 +46,8 @@
         overflow-x: scroll;
         width: 100%;
         -webkit-overflow-scrolling: touch; 
+        scrollbar-width: thin;
+        scrollbar-color: var(--point-detail) #faf6ed; 
     }
     .beneficio-list::-webkit-scrollbar {
         width: 2px;
