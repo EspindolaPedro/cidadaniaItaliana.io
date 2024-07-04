@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "git": "^0.1.5"
-  },
-  "devDependencies": {
-    "clean-css": "^5.3.3"
-  }
-}

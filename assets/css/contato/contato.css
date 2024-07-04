@@ -66,14 +66,22 @@
     display: grid;
     
 }
+
+@media (max-width:1150px) {
+   #contato {
+    padding-bottom: 40px;
+   }
+}
+
 @media (max-width: 1000px) {
 .form-content form input[type="text"],
 .form-content form input[type="email"]
  {
      width: 100%;
     max-width: 500px;
+
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     #contato {
         grid-template-columns: 1fr;
         padding-bottom: 80px;

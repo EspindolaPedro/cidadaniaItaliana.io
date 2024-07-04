@@ -9,7 +9,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.7), #161616), url('../../images/imgbg3.png');
+    background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.7), #161616), url('../../images/imgbg3.webp');
     background-position:center;
     background-size: cover; /* ajusta o tamanho da imagem para cobrir todo o elemento */
     background-repeat: no-repeat; /* impede a repetição da imagem */
@@ -43,7 +43,7 @@
 @media (max-width: 1270px) {
 
     .home h1 {
-        font: 700 48px/ 62px "Poppins", sans-serif;
+        font: 700 3rem/ 58px "Poppins", sans-serif;
     }
     .home .video-content {
         max-width: 100%;
@@ -54,15 +54,26 @@
    
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1170px) {
 
     .home h1 {
-        font: 700 42px/ 58px "Poppins", sans-serif;
+        font: 700 2.7rem/ 58px "Poppins", sans-serif;
     }
     .home p {
         font: 400 24px/36px "Roboto", sans-serif;
     }
    
+}
+@media (max-width: 1100px) {
+    .home h1 {
+        font: 700 2.3rem/ 58px "Poppins", sans-serif;
+    }
+    .home p {
+        font: 400 22px/36px "Roboto", sans-serif;
+    }
+    .home {
+        padding-bottom: 60px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -112,7 +123,7 @@
         margin-top: 20px;
     }
     #home::before {      
-        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.6), #141414), url('../../images/imgbg-mobile.png');
+        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.6), #141414), url('../../images/imgbg-mobile.webp');
         background-position:center;
         background-size: cover;
     }
