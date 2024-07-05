@@ -125,7 +125,7 @@
         margin-top: 20px;
     }
     #home::before {      
-        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.6), #141414), url('../../images/imgbg-mobile.webp');
+        background: linear-gradient(to bottom, rgba(17, 17, 17, 0.6), #141414), url('../../images/imgbg3.webp');
         background-position:center;
         background-size: cover;
     }

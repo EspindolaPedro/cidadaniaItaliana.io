@@ -35,6 +35,10 @@
     align-items: center;
     justify-content: space-between;
 }
+.logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 #btn-mobile {
     display: none;
     color: var(--bg);
