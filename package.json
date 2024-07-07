@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "clean-css": "^5.3.3"
-  }
+  },
+  "scripts": {
+    "minify-css": "cleancss -o assets/css/style.min.css assets/css/style.css --with-rebase"
+}
 }
