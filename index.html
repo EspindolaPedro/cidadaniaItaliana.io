@@ -12,8 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="preload" href="assets/css/style.min.css" as="style">
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    
     <script>
@@ -83,7 +83,7 @@
 
             </div>
             <picture>
-                <source srcset="assets/images/olhandoPNadamobile.webp" media="(max-width:800px)">
+                <source srcset="assets/images/olhandoPNada3.webp" media="(max-width:800px)">
                 <img width="3204" height="4800" src="assets/images/olhandoPNada3.webp" alt="Bertozzi e Bruschi" >
             </picture>
         </div>
@@ -164,83 +164,27 @@
 
     <section id="depoimentos" aria-label="Depoimento">
         <div class="depoimentos-content container">
-            <h1 class="font-h5 text1" data-aos="fade-right" data-aos-duration="4000">Depoimentos<span class="point-detail">.</span></h1>
-
-            <div class="slider">
-
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio0" checked>
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <input type="radio" name="radio-btn" id="radio5">
-                    <input type="radio" name="radio-btn" id="radio6">
-                    <input type="radio" name="radio-btn" id="radio7">
-                    <input type="radio" name="radio-btn" id="radio8">
-                    <input type="radio" name="radio-btn" id="radio9">
-
-
-                    <div class="slide first">
-                        <img width="841" height="214" src="assets/images/depoimentos/dep1.webp" alt="Depoimento 1">
-                    </div>
-                    <div class="slide">
-                        <img width="903" height="216" src="assets/images/depoimentos/dep2.webp" alt="Depoimento 2">
-                    </div>
-                    <div class="slide ">
-                        <img width="895" height="237" src="assets/images/depoimentos/dep3.webp" alt="Depoimento 3">
-                    </div>
-                    <div class="slide ">
-                        <img width="894" height="238" src="assets/images/depoimentos/dep4.webp" alt="Depoimento 4">
-                    </div>
-                    <div class="slide ">
-                        <img width="893" height="211" src="assets/images/depoimentos/dep5.webp" alt="Depoimento 5">
-                    </div>
-                    <div class="slide ">
-                        <img width="895" height="196" src="assets/images/depoimentos/dep6.webp" alt="Depoimento 6">
-                    </div>
-                    <div class="slide ">
-                        <img width="893" height="209" src="assets/images/depoimentos/dep7.webp" alt="Depoimento 7">
-                    </div>
-                    <div class="slide ">
-                        <img width="876" height="275" src="assets/images/depoimentos/dep8.webp" alt="Depoimento 8">
-                    </div>
-                    <div class="slide ">
-                        <img width="864" height="243" src="assets/images/depoimentos/dep9.webp" alt="Depoimento 9">
-                    </div>
-                    <div class="slide ">
-                        <img width="858" height="273" src="assets/images/depoimentos/dep10.webp" alt="Depoimento 10">
-                    </div>
-
-
-                    <div class="navigation-auto">
-                        <div class="auto-btn0"></div>
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                        <div class="auto-btn5"></div>
-                        <div class="auto-btn6"></div>
-                        <div class="auto-btn7"></div>
-                        <div class="auto-btn8"></div>
-                        <div class="auto-btn9"></div>
-                    </div>
-
-                    <div class="manual-navigation">
-                        <label for="radio0" class="manual-btn" id="manual-btn0"></label>
-                        <label for="radio1" class="manual-btn" id="manual-btn1"></label>
-                        <label for="radio2" class="manual-btn" id="manual-btn2"></label>
-                        <label for="radio3" class="manual-btn" id="manual-btn3"></label>
-                        <label for="radio4" class="manual-btn" id="manual-btn4"></label>
-                        <label for="radio5" class="manual-btn" id="manual-btn5"></label>
-                        <label for="radio6" class="manual-btn" id="manual-btn6"></label>
-                        <label for="radio7" class="manual-btn" id="manual-btn7"></label>
-                        <label for="radio8" class="manual-btn" id="manual-btn8"></label>
-                        <label for="radio9" class="manual-btn" id="manual-btn9"></label>
-                    </div>
+            <div class="indent">
+                <h1 class="font-h5 text1" data-aos="fade-right" data-aos-duration="4000">Depoimentos<span class="point-detail">.</span></h1>
+            </div>
+            <div class="slide-wrapper">
+                <ul class="slide">
+                    <li><img src="assets/images/depoimentos/dep.png" alt="depoimentos 1"></li>
+                    <li><img src="assets/images/depoimentos/dep1.PNG" alt="depoimentos 2"></li>
+                    <li><img src="assets/images/depoimentos/dep2.PNG" alt="depoimentos 3"></li>
+                    <li><img src="assets/images/depoimentos/dep3.PNG" alt="depoimentos 4"></li>
+                    <li><img src="assets/images/depoimentos/dep4.PNG" alt="depoimentos 5"></li>
+                    <li><img src="assets/images/depoimentos/dep5.PNG" alt="depoimentos 6"></li>
+                    <li><img src="assets/images/depoimentos/dep6.PNG" alt="depoimentos 7"></li>
+                    <li><img src="assets/images/depoimentos/dep7.PNG" alt="depoimentos 8"></li>
+                    <li><img src="assets/images/depoimentos/dep8.PNG" alt="depoimentos 9 "></li>
+                    <li><img src="assets/images/depoimentos/dep10.png" alt="depoimentos 10"></li>
+                </ul>
+                <div class="arrow-nav">
+                    <button class="prev" style="display: none;"></button>
+                    <button class="next" style="display: none;"></button>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -361,6 +305,7 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="assets/module.js"></script>
     <script src="assets/script.js"></script>
     <script>
            document.addEventListener('DOMContentLoaded', function() {

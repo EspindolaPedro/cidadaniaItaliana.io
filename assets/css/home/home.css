@@ -1,7 +1,6 @@
 #home {
     position: relative; /* Garante que o pseudo-elemento ::before seja posicionado corretamente */
-    min-height: 80vh; /* Altura total da seção, ajuste conforme necessário */
-    
+    padding-bottom: 80px;
 }
 #home::before {
     content: '';
@@ -99,7 +98,7 @@
 
 @media (max-width: 870px) {
 
-    
+
     .home h1 {
         font: 700 36px/ 44px "Poppins", sans-serif;
     }
@@ -116,9 +115,6 @@
 @media (max-width: 770px) {
     .home-content {
       margin-top: 90px;
-    }
-    #home {
-        min-height: 80vh;
     }
     .video-content {
         display: block;
@@ -145,6 +141,9 @@
 }
 
 @media (max-width: 500px) {
+    #home {
+        padding-bottom:10px;
+    }
     .video-content {
         margin-top: 50px;
     }

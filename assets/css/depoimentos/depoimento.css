@@ -3,176 +3,70 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    overflow-x:hidden;
+    overflow-x: hidden;
     padding-bottom: 40px;
 }
-.depoimentos-content h1 {
-    align-items: center;
-    padding: 0px 50px 50px 50px;
+.depoimentos-content .indent h1  {
+    
+    padding: 80px 0px 80px 0px;
+    text-align: center;
 }
-
-.slider {
-    margin: 0 auto;
-    width:850px;
-    height:250px;
+.slide-wrapper {
     overflow: hidden;
-    touch-action: pan-y;
 }
-.slides {
-    display: flex;
-    width: 1000%;
-    height: 400px;
-   
+#depoimentos img {
+    display: block;
+    max-width: 100%;
 }
 
-.slides input {
-    display:none ;
-}
 .slide {
-    width: 10%;
-    transition: 2s;
-    position: relative;
+    display: flex;
+    align-items: center;
+    transition: .5s;
 }
-
-
-.slide img {
-    width: 100%;
-    height: auto;
+.slide:hover {
+    will-change: transform;
 }
+.slide li {
+    width: 80vw;
+    flex-shrink: 0;
+    max-width:max-content;
+    margin: 0 15px;
 
-.manual-navigation {
-    position: absolute;
-    width: 800px;
-    margin-top: 270px;
+    opacity: .8;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    border-radius: 4px ;
+    overflow: hidden;
+    transform: scale(.6);
+    transition: .5s;
+
+}
+.slide li.active {
+    opacity: 1;
+    transform: scale(1);
+}
+[data-control='slide'] {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+}
+[data-control='slide'] li a {
+   display: block;
+   width: 12px;
+   height: 12px;
+   background-color: #fff;
+   border-radius: 50%;
+   overflow: hidden;
+   margin: 5px;
+   text-indent: -999px;
+}
+[data-control='slide'] li.active a, 
+[data-control='slide'] li a:hover{
+    background: #e54;
 }
 
-.manual-btn {
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 20px;
-}
-.manual-btn:hover {
-    background-color: #fff;
-}
-#radio0:checked ~ .first {
-    margin-left: 0;
-}
-#radio1:checked ~ .first {
-    margin-left: -10%;
-}
-#radio2:checked ~ .first {
-    margin-left: -20%;
-}
-#radio3:checked ~ .first {
-    margin-left: -30%;
-}
-#radio4:checked ~ .first {
-    margin-left: -40%;
-}
-#radio5:checked ~ .first {
-    margin-left: -50%;
-}
-#radio6:checked ~ .first {
-    margin-left: -60%;
-}
-#radio7:checked ~ .first {
-    margin-left: -70%;
-}
-#radio8:checked ~ .first {
-    margin-left: -80%;
-}
-#radio9:checked ~ .first {
-    margin-left: -90%;
-}
-
-.navigation-auto div {
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.navigation-auto {
-    position: absolute;
-    width: 800px;
-    margin-top: 270px;
-    display: flex;
-    justify-content: center;
-}
-.navigation-auto div:not(:last-child) {
-    margin-right: 20px;
-}
-#radio0:checked ~ .manual-navigation #manual-btn0,
-#radio1:checked ~ .manual-navigation #manual-btn1,
-#radio2:checked ~ .manual-navigation #manual-btn2,
-#radio3:checked ~ .manual-navigation #manual-btn3,
-#radio4:checked ~ .manual-navigation #manual-btn4,
-#radio5:checked ~ .manual-navigation #manual-btn5,
-#radio6:checked ~ .manual-navigation #manual-btn6,
-#radio7:checked ~ .manual-navigation #manual-btn7,
-#radio8:checked ~ .manual-navigation #manual-btn8,
-#radio9:checked ~ .manual-navigation #manual-btn9 {
-    background: #fff; 
-}
-
-@media (max-width:1000px) {
-    .depoimentos-content h1 {
-        font-size: 2.5rem;
-    }
-    .slider, .navigation-auto, .manual-navigation {
-        width: 100%;
-    }
-   div.manual-navigation,.navigation-auto {
-    margin-left: -26px;
-   }
-    .slide img {
-        width: 100%; 
-        height: auto; 
-    }
-}
-
-@media (max-width: 768px) {
-    .slider {
-        height: 200px; 
-    }
-
-    .navigation-auto, .manual-navigation {
-        margin-top: 180px; 
-        width: 100%;
-    }
-
-    .manual-btn, .navigation-auto div {
-        padding: 3px; 
-        margin-right: 10px; 
-    }
-}
-
-@media (max-width: 480px) {
-    .depoimentos-content h1 {
-        margin-left: -40px;
-    }
-    .slider {
-        height: 150px; 
-    }
-
-    .navigation-auto, .manual-navigation {
-        margin-top: 160px; 
-    }
-
-    .manual-btn, .navigation-auto div {
-        border-radius: 5px;
-    }
-    .depoimentos-content {
-        width: 100%;
-      
+@media (max-width: 800px) {
+    .depoimentos-content .indent h1{
+        font-size: 2.9rem;
     }
 }
