@@ -142,7 +142,7 @@ export class Slide {
         this.activePrevSlide = this.activePrevSlide.bind(this);
         this.activeNextSlide = this.activeNextSlide.bind(this);
 
-        this.onResize = debounce(this.onResize.bind(this), 200);
+        this.onResize = debounce(this.onResize.bind(this), 500);
     }
 
     init() {
@@ -193,7 +193,7 @@ export class SlideNav extends Slide {
     }
     activeControlItem() {
         this.controlArray.forEach((item) => {
-            item.classList.remove(this.activeClass)
+            item.classList.remove(this.activeClass);
         });
         this.controlArray[this.index.active].classList.add(this.activeClass);
     }

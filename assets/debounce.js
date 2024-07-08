@@ -1,6 +1,6 @@
 export default function debounce(callback, delay) {
     let timer;
-
+    delay;
     return function (...args) {
         clearTimeout(timer);
         timer = setTimeout(() => {

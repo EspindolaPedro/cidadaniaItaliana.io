@@ -37,8 +37,8 @@ function ativarPergunta(e) {
 perguntas.forEach(eventosPerguntas);
 
 //scroll
-document.addEventListener('DOMContentLoaded', function() {
-  const beneficioList = document.querySelector('.beneficio-list');
+
+const beneficioList = document.querySelector('.beneficio-list');
   
   function applyScrollbarStyles() {
     const beneficioList = document.querySelector('.beneficio-list');
@@ -49,9 +49,9 @@ document.addEventListener('DOMContentLoaded', function() {
         beneficioList.style.scrollbarWidth = 'thin';
         beneficioList.style.scrollbarColor = 'var(--point-detail) #faf6ed';
     }
-  }
-});
-
+  };
+document.addEventListener('DOMContentLoaded', applyScrollbarStyles)
+  
 function sendMessage() {
   let message = document.getElementById('message').value;
   let encodedMessage = encodeURIComponent(message);
@@ -61,7 +61,24 @@ function sendMessage() {
 }
 
 window.addEventListener('resize', applyScrollbarStyles);
-window.addEventListener('DOMContentLoaded', applyScrollbarStyles);
+window.addEventListener('DOMContentLoaded',applyScrollbarStyles);
 
 
-/*Slide*/
+/*navigation*/
+const links = document.querySelectorAll('.menu a[href^="#"]');
+function scrollToSection(e) {
+  e.preventDefault();
+  const href = e.currentTarget.getAttribute('href')
+  const section = document.querySelector(href)
+  const topo = section.offsetTop;
+
+  window.scrollTo({
+    top: topo,
+    behavior: 'smooth'
+  });
+};
+
+links.forEach((link) => {
+  link.addEventListener('click', scrollToSection);
+  
+});

@@ -36,7 +36,7 @@
     margin-top: 40px;
 }
 .footer a:hover{
-    color:var(--box-detail);
+    color:rgba(104, 103, 104, 0.933);
 }
 @media (max-width:800px) {
     .footer > img {

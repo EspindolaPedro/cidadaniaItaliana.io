@@ -22,7 +22,7 @@
 .slide {
     display: flex;
     align-items: center;
-    transition: .5s;
+    transition: .4s;
 }
 .slide:hover {
     will-change: transform;
@@ -38,7 +38,7 @@
     border-radius: 4px ;
     overflow: hidden;
     transform: scale(.6);
-    transition: .5s;
+    transition: .4s;
 
 }
 .slide li.active {
@@ -61,8 +61,16 @@
    text-indent: -999px;
 }
 [data-control='slide'] li.active a, 
+[data-control='slide'] li a {
+    transform: scale(.8);
+    transition: .6s;
+}
+
+[data-control='slide'] li.active a, 
 [data-control='slide'] li a:hover{
-    background: #e54;
+    background: var(--point-detail);
+    transform: scale(1.1);
+    transition: .6s;
 }
 
 @media (max-width: 800px) {
