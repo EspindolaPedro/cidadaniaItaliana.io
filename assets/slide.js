@@ -152,6 +152,7 @@ export class Slide {
         this.slidesConfig();
         this.changeSlide(0); // Iniciar com o primeiro slide ativo
         this.addResizeEvent();
+        window.addEventListener('load', this.onResize);
         return this;
     }
 }
