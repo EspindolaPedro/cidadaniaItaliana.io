@@ -172,8 +172,7 @@ export class SlideNav extends Slide {
         this.nextElement.addEventListener('click', this.activeNextSlide);
     }
 
-
-
+    
     createControl() {
         const control = document.createElement('ul');
         control.dataset.control = 'slide';
